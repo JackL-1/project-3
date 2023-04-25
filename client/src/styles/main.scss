@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap');
+@import './components/profile.scss';
+@import './components/forms';
+
+
+
+
+* {
+  box-sizing: border-box;
+  font-family: 'Raleway', serif !important;
+}
+
+body {
+  margin: 0;
+  background: black;
+  font-family: 'Raleway', serif !important;
+}
+
+.nav {
+  max-width: 1320px;
+  margin: 0 auto;
+  margin-top: 10px;
+    
+    .nav-item{
+      margin-right: 50px;
+      width: 160px;
+      text-align: center;
+    
+      .nav-link {
+        color: #898989;;
+        font-weight: 600;
+        &:hover, &.active {
+          background-color: #898989 !important;
+          color: #000;
+          font-weight: 600;
+        }
+      }
+    }
+  
+}
+
+.hero {
+  height: 50vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  img {
+    height: 75%;
+    
+  }
+
+  h1 {
+    font-weight: bold;
+    color: #898989;
+
+    span {
+      color: #51BED3;
+    }
+
+  }
+
+  .hero-text{
+  color: #898989;
+}
+
+}
+
+
+.hero {
+  height: 50vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.hero h1 {
+  font-weight: bold;
+  color: #898989;
+}
+
+.hero img {
+  height: 75%;
+}
+
+.hero h1 span {
+  color: #51BED3;
+}
+.hero .hero-text {
+  color: #898989;
+}
+
+.item {
+  margin-bottom: 40px;
+  text-align: center;
+
+  .card-body{
+    color: black;
+    background: #898989;
+
+    .card-title{
+      font-size: 25px;
+      font-weight: 600;
+    }
+
+  }
+}
+
+.singleImage {
+  max-width:100%;
+  max-height: 100%;
+}
+
+.imageInfoRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &:nth-child(2) {
+    margin-top: 30px; 
+  }
+}
+
+.description {
+margin-top : 50px ;
+max-width: 500px
+}
+
+.swapNow{
+padding: 7px;
+margin-right: 10px;
+
+}
+
+
+a {
+  text-decoration: none;
+}
+
+.card {
+overflow: hidden;
+border: none;
+border-radius: 35px;
+}
+
+.thumbnail {
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+}
+
+.spinner {
+  height: 300px;
+}
+
+#hero {
+  border-bottom: 5px;
+  margin-top: 80px;
+  position: relative;
+  background-image: '../images/hagl.png';
+  background-color: red;
+  background-size: 30px;
+
+  .haglLogo {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+.reviewDropdown{
+color: #0d0d0d;
+background-color:#535353
+}
+
+.titleLocation {
+  h1 {
+    color: #898989;
+  }
+}
+
+.itemInfo {
+
+  padding: 70px;
+  text-align: center;
+
+  p {
+   color: #898989;
+  }
+  h3{
+    font-size: 30px;
+    span {
+      color: #51BED3;
+      font-size: 25px;
+    }
+  }
+  .deleteItem {
+    color: red;
+  }
+}
+
+
+.description {
+    .col {
+      p {
+        color: #898989
+      }
+      span {
+        color: #51BED3;
+        font-size: 20px;
+      }
+    }
+}
+
+.delete-button {
+  color: white;
+  background-color: red !important;
+}
+
+
+.delete-button:enabled:active {
+  background-color: #850000 !important;
+  box-shadow: 0 0 2px darkslategray !important;
+  transform: translateY(px) !important;
+}
+
+.image-pic {
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 35px;
+}
+
+.item-row {
+  margin-top: 20px;
+}

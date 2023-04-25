@@ -1,0 +1,21 @@
+import jwt from 'jsonwebtoken'
+import 'dotenv/config'
+import User from '../models/users.js'
+import { NotFound, Unauthorized } from './errors.js'
+
+export const secureRoute = async (req, res, next) => {
+  try {
+    const authorization = req.headers.authorization
+    if (!authorization) throw new Unauthorized('Missing Authorization header')
+    const token = authorization.replace('Bearer ', '')
+    const payload = jwt.verify(token, process.env.SECRET)
+    const loggedInUser = await User.findById(payload.sub)
+    if (!loggedInUser) throw new NotFound('User not found')
+    req.loggedInUser = loggedInUser
+    next()
+  } catch (err) {
+    console.log(err.status)
+    console.log(err.message)
+    return res.status(401).json({ message: 'Unauthorized' })
+  }
+}

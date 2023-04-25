@@ -1,0 +1,54 @@
+.form-page form {
+  margin-top: 40px;
+  background-color: #898989;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+.form-page form label {
+  display: block;
+  margin-left: 4px;
+  padding-bottom: 5px;
+}
+.form-page form input, .form-page form textarea {
+  width: 100%;
+  margin-bottom: 15px;
+  background-color: black;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 5px;
+  border-radius: 10px;
+  color: grey;
+}
+.form-page form input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px black inset;
+  -webkit-text-fill-color: grey;
+}
+.form-page form .btn {
+  background-color: grey;
+  color: black;
+  font-weight: bold;
+  width: 100px;
+  margin-top: 10px;
+}
+.form-page form button:enabled:active {
+  background-color: #51BED3;
+  box-shadow: 0 0 2px darkslategray;
+  transform: translateY(px);
+}
+.form-page form .submitbtn {
+  background-color: grey;
+  color: black;
+  font-weight: bold;
+  width: 100px;
+  margin: 0 auto;
+  margin-top: 10px;
+  border-radius: 4px;
+  border: none;
+}
+.form-page form .btnCenter {
+  text-align: center;
+}
+.form-page form .messageForm {
+  width: 150px;
+  flex: 0 0;
+}/*# sourceMappingURL=forms.css.map */
